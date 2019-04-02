@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Practica</title>
+	</head>
+	<body>
+		<form>
+			<br>
+			Nombre:<br>
+			<input name="name" type="text" id="name"></input><br>
+			<br>
+			Edad:<br>
+			<input name="age" type="text" id="edad"></input><br>
+			<br>
+			Pais:<br>
+			<input name="pais" list="coun" id="pais">
+			<datalist id="coun">
+				<option value="Uruguay">
+				<option value="Argentina">
+				<option value="Brasil">
+			</datalist>
+		</form>
+			<br>
+			<button onclick="sub()">Try it</button>
+		<script>
+			function sub(){
+				name = document.getElementById("name").value;
+				edad = document.getElementById("edad").value;
+				pais = document.getElementById("pais").value;
+				console.log(name);
+				console.log(edad);
+				console.log(pais);
+			}
+		</script>
+	</body>
+</html>
