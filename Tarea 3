@@ -1,0 +1,9 @@
+var n = parseInt(prompt("Ingrese cuantos lados tendra el cuadrado"));
+while (isNaN(n)){
+    var n = parseInt(prompt("Ingrese cuantos lados tendra el cuadrado (valor numerico)"));
+} 
+ecu = 0;
+for (i = 1; i <= n; i++){
+    ecu = ecu + Math.pow(i,2);
+}
+alert (ecu);

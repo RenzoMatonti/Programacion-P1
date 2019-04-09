@@ -1,0 +1,5 @@
+var a = Math.abs(parseInt(prompt("Ingrese primer numero")));
+var b = Math.abs(parseInt(prompt("Ingrese segundo numero")));
+var c = Math.abs(parseInt(prompt("Ingrese tercer numero")));
+
+alert("La Suma es: " + (a + b + c));

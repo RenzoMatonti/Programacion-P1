@@ -1,0 +1,8 @@
+var n = parseInt(prompt("Ingrese cuantos segundos: "));
+var d = Math.trunc(n / (24 * 60 * 60));
+n = n - (d * 24 * 60 * 60);
+var h = Math.trunc(n / (60 * 60));
+n = n - (h / (60 * 60));
+var m = Math.trunc(n / 60);
+n = n - (m * 60);
+alert ("Dias " + d + " Horas " + h + " Minutos " + m + " Segundos " + n);
