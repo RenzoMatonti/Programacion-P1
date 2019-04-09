@@ -1,0 +1,13 @@
+var n = parseInt(prompt("Ingrese un numero"));
+while (n < 1){
+    var n = parseInt(prompt ("Ingrese un numero mayor o igual a 1"));
+}
+salida = "";
+suma = 0;
+for (i = 1 ; i<=n ; i ++){
+    if ((i % 3 == 0) && (i % 2 != 0)){
+        salida = salida + " " + i ;
+        suma = suma + i;
+    }
+}
+alert ("los numeros impares multiplos de 3 son: " + salida + " Y su suma da: " + suma);

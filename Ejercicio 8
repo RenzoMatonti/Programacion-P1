@@ -1,0 +1,19 @@
+var nom1 = prompt("Ingrese nombre de persona 1");
+var dia1 = parseInt(prompt("Ingrese dia de persona 1"));
+var mes1 = parseInt(prompt("Ingrese mes de persona 1"));
+
+var nom2 = prompt("Ingrese nombre de persona 2");
+var dia2 = parseInt(prompt("Ingrese dia de persona 2"));
+var mes2 = parseInt(prompt("Ingrese mes de persona 2"));
+
+if (((mes2 >= 1)  && (mes2 <= 12)) && ((mes1 >= 1) && (mes1 <= 12))){
+    if ((mes1 < mes2) || (mes1 == mes2) && (dia1 < dia2)){
+        alert(nom2 + " Es mayor que " + nom1);
+    }else if ((mes1 == mes2) && (dia1 == dia2)) {
+        alert("Nacieron el mismo dia");
+    }else{
+        alert(nom1 + " Es mayor que " + nom2);
+    }   
+}else{
+    alert("mes no valido");
+}

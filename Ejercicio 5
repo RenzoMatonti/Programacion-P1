@@ -1,0 +1,7 @@
+suma=0;
+var n = parseInt(prompt("Ingrese cantidad de numeros a ingresar"));
+for (i = 0 ; i < n ; i ++){
+    var num = parseInt(prompt ("Ingrese numero " + (i + 1) + ": "));
+    suma= suma + num;
+}
+alert ("El Promedio de los numeros ingresados es: " + (suma/n));
